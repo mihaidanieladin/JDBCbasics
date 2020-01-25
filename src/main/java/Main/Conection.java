@@ -9,8 +9,8 @@ import java.util.logging.Logger;
 public class Conection {
     
     // Define variables to access the DB
-    // Conecting to a mySQL database called 'test'
-    private static final String SQL_URL = "jdbc:sql://localhost/test?useSSL=false?serverTimezone=UTC";
+    // Conecting to a mySQL database called 'person'
+    private static final String SQL_URL = "jdbc:sql://localhost/person?useSSL=false?serverTimezone=UTC";
     private static final String SQL_USER = "root";
     private static final String SQL_PASS = "admin";
     
