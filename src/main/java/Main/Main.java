@@ -3,6 +3,11 @@ package Main;
 
 import java.util.ArrayList;
 import java.util.List;
+// IMPORT DB METHODS TO MODIFY DATA
+import DB.Select;
+import DB.Insert;
+import DB.Update;
+import DB.Remove;
 
 /**
  * @author Mihai Daniel Adin
@@ -15,9 +20,11 @@ public class Main {
     public static void main(String[] args) {
         
         // New database object
-        Database db = new Database();
+        Select selectDB = new Select();
+        Insert insertDB = new Insert();
+        
         // Adding persons from the DB in a Person type obj list
-        List<Person> persons = db.select();
+        List<Person> persons = selectDB.select();
         
         // Iterating persons from DB
         for(Person pers : persons){
@@ -34,6 +41,6 @@ public class Main {
         person.setEmail("ppgnzlo@gmail.com");
         person.setTelephone("642777321");
         // Insert new person created previous and add to the DB
-        db.insert(person);
+        insertDB.insert(person);
     }
 }
