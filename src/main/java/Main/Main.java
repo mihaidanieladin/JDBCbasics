@@ -57,5 +57,15 @@ public class Main {
         // Insert new person created previous and add to the DB
         insertDB.insert(person);
         */
+        
+        
+        Person person = new Person();
+        person.setName("Pepe");
+        person.setSurname("Fernandez");
+        person.setEmail("ppgnzlo@gmail.com");
+        person.setTelephone("642777321");
+        person.setId_person(3);
+        
+        updateDB.update(person);
     }
 }
