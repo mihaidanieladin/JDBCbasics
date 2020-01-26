@@ -12,16 +12,6 @@ import DB.Remove;
 /**
  * @author Mihai Daniel Adin
  * 
- *          Project Structure
- *                Main
- * -----------------|---------------
- * |          |          |         |
- * Select   Insert    Update    Remove
- * -----------------------------------
- * Database     Connection      Person
- *                  |
- *                MySQL
- * 
  * This are the Java Database conection JDBC basics
  * Making an fully functional JDBC CRUD API with mySQL Database
  */
