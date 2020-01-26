@@ -21,7 +21,6 @@ import DB.Remove;
  * Database     Connection      Person
  *                  |
  *                MySQL
- * Image in project img folder
  * 
  * This are the Java Database conection JDBC basics
  * Making an fully functional JDBC CRUD API with mySQL Database
@@ -46,26 +45,36 @@ public class Main {
             System.out.println("pers = " + pers);
         }
         
-        /*
-        //Creating a new Perosn object
-        Person person = new Person();
-        // Initializing the person attributes
-        person.setName("Pepe");
-        person.setSurname("Gonzalo Garcia");
-        person.setEmail("ppgnzlo@gmail.com");
-        person.setTelephone("642777321");
-        // Insert new person created previous and add to the DB
-        insertDB.insert(person);
-        */
+        
+//        //Creating a new Perosn object
+//        Person person = new Person();
+//        // Initializing the person attributes
+//        person.setName("Pepe");
+//        person.setSurname("Gonzalo Garcia");
+//        person.setEmail("ppgnzlo@gmail.com");
+//        person.setTelephone("642777321");
+//        // Insert new person created previous and add to the DB
+//        insertDB.insert(person);
         
         
-        Person person = new Person();
-        person.setName("Pepe");
-        person.setSurname("Fernandez");
-        person.setEmail("ppgnzlo@gmail.com");
-        person.setTelephone("642777321");
-        person.setId_person(3);
+//        //Create a new Preson object
+//        Person person = new Person();
+//        // Modifing person attributes
+//        person.setName("Pepe");
+//        person.setSurname("Fernandez");
+//        person.setEmail("ppgnzlo@gmail.com");
+//        person.setTelephone("642777321");
+//        person.setId_person(3);
+//        // Update the person object and add to DB
+//        updateDB.update(person);
         
-        updateDB.update(person);
+        
+//        // Create a new person object
+//        Person person = new Person();
+//        // Specify the person to be deleted by the index(3) in the DB
+//        person.setId_person(3);
+//        // Removre person from DB
+//        removeDB.remove(person);
+        
     }
 }

@@ -33,9 +33,10 @@ public class Select extends Database {
             // Adding a prepared statement to the conection
             statement = connect.prepareStatement(SQL_SELECT);
             // Executing the statement and storing the return objects from DB
+            // Pirnt to console the statement
+            System.out.println("Executing query: " + SQL_SELECT);
+            // Store the selected registers
             resultSet = statement.executeQuery();
-            // Creating new person from DB into local
-            
             
             while(resultSet.next()){
                 // Store returned values from DB into local variables
