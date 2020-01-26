@@ -21,6 +21,7 @@ import DB.Remove;
  * Database     Connection      Person
  *                  |
  *                MySQL
+ * Image in project img folder
  * 
  * This are the Java Database conection JDBC basics
  * Making an fully functional JDBC CRUD API with mySQL Database
