@@ -31,7 +31,7 @@ public class Select extends Database {
             // Conecting to the driver DB
             connect = Conection.getConection();
             // Adding a prepared statement to the conection
-            statement = connect.prepareStatement(Database.SQL_SELECT);
+            statement = connect.prepareStatement(SQL_SELECT);
             // Executing the statement and storing the return objects from DB
             resultSet = statement.executeQuery();
             // Creating new person from DB into local
