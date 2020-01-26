@@ -53,4 +53,32 @@ public class Database {
         }
         return persons;
     }
+    
+    public int insert(Person person){
+        Connection connect = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        int rows = 0;
+        
+        try {
+            connect = Conection.getConection();
+            statement = connect.prepareStatement(SQL_INSERT);
+            
+            statement.setString(1, person.getName());
+            statement.setString(2, person.getSurname());
+            statement.setString(3, person.getEmail());
+            statement.setString(4, person.getTelephone()); 
+            
+            System.out.println("Executing query " + SQL_INSERT);
+            rows = statement.executeUpdate();
+            System.out.println("Registry afected: " + rows);
+            
+        } catch(SQLException ex) {
+            ex.printStackTrace(System.out);
+        } finally {
+            Conection.close(statement);
+            Conection.close(connect);
+        }
+        return rows;
+    }
 }
