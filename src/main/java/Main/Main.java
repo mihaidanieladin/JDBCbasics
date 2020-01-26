@@ -17,5 +17,13 @@ public class Main {
         for(Person pers : persons){
             System.out.println("pers = " + pers);
         }
+        
+        Person person = new Person();
+        person.setName("Pepe");
+        person.setSurname("Gonzalo Garcia");
+        person.setEmail("ppgnzlo@gmail.com");
+        person.setTelephone("642777321");
+        
+        db.insert(person);
     }
 }
