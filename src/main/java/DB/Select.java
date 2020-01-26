@@ -10,12 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Select extends Database {
+    
     // Select method to recive an Person type obj from DB and return as a list array
     public List<Person> select(){
+        
+        
         // Declarate connection attributes with null values
         Connection connect = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
+        
+        
         // Declarate new Person type object
         Person person = null;
         // New Person array list type where each person from DB is hosted
@@ -30,6 +35,8 @@ public class Select extends Database {
             // Executing the statement and storing the return objects from DB
             resultSet = statement.executeQuery();
             // Creating new person from DB into local
+            
+            
             while(resultSet.next()){
                 // Store returned values from DB into local variables
                 int id_person = resultSet.getInt("id_person");
@@ -37,6 +44,8 @@ public class Select extends Database {
                 String surname = resultSet.getString("surname");
                 String email = resultSet.getString("email");
                 String telephone = resultSet.getString("telephone");
+                
+                
                 // Creating a new Person object and add the stored values to the obj
                 person = new Person();
                 person.setId_person(id_person);
@@ -44,6 +53,8 @@ public class Select extends Database {
                 person.setSurname(surname);
                 person.setEmail(email);
                 person.setTelephone(telephone);
+                
+                
                 // Add person to the local array list
                 persons.add(person);
             }

@@ -12,7 +12,18 @@ import DB.Remove;
 /**
  * @author Mihai Daniel Adin
  * 
+ *          Project Structure
+ *                Main
+ * -----------------|---------------
+ * |          |          |         |
+ * Select   Insert    Update    Remove
+ * -----------------------------------
+ * Database     Connection      Person
+ *                  |
+ *                MySQL
+ * 
  * This are the Java Database conection JDBC basics
+ * Making an fully functional JDBC CRUD API with mySQL Database
  */
 
 // Main method that runs the program
@@ -22,6 +33,8 @@ public class Main {
         // New database object
         Select selectDB = new Select();
         Insert insertDB = new Insert();
+        Update updateDB = new Update();
+        Remove removeDB = new Remove();
         
         // Adding persons from the DB in a Person type obj list
         List<Person> persons = selectDB.select();
@@ -32,7 +45,7 @@ public class Main {
             System.out.println("pers = " + pers);
         }
         
-        
+        /*
         //Creating a new Perosn object
         Person person = new Person();
         // Initializing the person attributes
@@ -42,5 +55,6 @@ public class Main {
         person.setTelephone("642777321");
         // Insert new person created previous and add to the DB
         insertDB.insert(person);
+        */
     }
 }

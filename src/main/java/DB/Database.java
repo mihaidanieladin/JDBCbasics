@@ -1,6 +1,6 @@
 package DB;
 
-// SQL CRUD methods
+// SQL CRUD Sentences
 
 public class Database {
     
